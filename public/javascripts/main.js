@@ -24,9 +24,15 @@ var weightedRandom =  function(spec) {
     }
 };
 
+var paint = function() {
+    $(this).removeClass(colorString);
+    var position = weightedRandom({ 0:0.083, 1:0.083, 2:0.083, 3:0.083, 4:0.083, 5:0.083, 6:0.083, 7:0.083, 8:0.083, 9:0.083, 10:0.083, 11:0.083, 12:0.004 });
+    $(this).addClass(colorArray[position]);
+    if (position == 12) {
+        $(this).off('click', foo);
+    }
+};
+
 $(document).ready(function() {
-  $('.tile').on('click', function() {
-      $(this).removeClass(colorString);
-      $(this).addClass(colorArray[weightedRandom({ 0:0.083, 1:0.083, 2:0.083, 3:0.083, 4:0.083, 5:0.083, 6:0.083, 7:0.083, 8:0.083, 9:0.083, 10:0.083, 11:0.083, 12:0.004 })]);
-  });
+  $('.tile').on('click', paint);
 });

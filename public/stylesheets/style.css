@@ -1,5 +1,11 @@
 .tile {
   height: 150px;
+  border: solid 1px white;
+}
+
+.alert {
+  margin: 20px;
+  text-align: center;
 }
 
 .blue {
@@ -46,8 +52,8 @@
   background-color: lightblue;
 }
 
-.white {
-  background-color: white;
+.brown {
+  background-color: brown;
 }
 
 .lose {

@@ -16,6 +16,7 @@ var colorArray = [
 
 var colorString = colorArray.join(' ');
 
+// thank you stackoverflow
 var weightedRandom =  function(spec) {
     var i, sum=0, r=Math.random();
     for (i in spec) {

@@ -1,5 +1,5 @@
-.col-md-1 {
-  height: 100px;
+.tile {
+  height: 150px;
 }
 
 .blue {
@@ -52,7 +52,7 @@
 
 .lose {
   background-image: url("../images/lose.png");
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
 }
 
 

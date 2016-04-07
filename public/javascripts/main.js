@@ -26,7 +26,7 @@ var weightedRandom =  function(spec) {
 
 var paint = function() {
     $(this).removeClass(colorString);
-    var position = weightedRandom({ 0:0.083, 1:0.083, 2:0.083, 3:0.083, 4:0.083, 5:0.083, 6:0.083, 7:0.083, 8:0.083, 9:0.083, 10:0.083, 11:0.083, 12:0.004 });
+    var position = weightedRandom({ 0:0.08295, 1:0.08295, 2:0.08295, 3:0.08295, 4:0.08295, 5:0.08295, 6:0.08295, 7:0.08295, 8:0.08295, 9:0.08295, 10:0.08295, 11:0.08295, 12:0.0046 });
     $(this).addClass(colorArray[position]);
     if (position == 12) {
         $(this).off('click', paint);
